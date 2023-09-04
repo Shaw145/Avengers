@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.navbar{
+    height: 140px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: flex-start;
+    padding: 0 140px;
+    position: fixed;
+    z-index: 99;
+}
+
+.navbar img{
+    height: 80px;
+}
+.navbar a{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* the background clor behind the cursor */
+.cursor{
+    height: 20px;
+    width: 20px;
+    background-color: #96C11E;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+    transition: all linear 0.1s;
+}
+.cursor-blur{
+    height: 500px;
+    width: 500px;
+    background-color: rgba(150,193,30,0.3);
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(40px);
+    z-index: 9;
+    transition: all linear 0.5s;
+}
+
+.main-video video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+.main-menu{
+    position: relative;
+    background-color: rgba(0, 0, 0,0.3);
+}
+
+.page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+}
+.page1 h1{
+    font-size: 120px;
+    font-weight: 900;
+    position: relative;
+}
+/* **************** */
+.page1 h1::before{
+    content: "AVENGERS. ASSEMBLE.";
+    position: absolute;
+    color: black;
+    top: -5px;
+    left: -5px;
+    -webkit-text-stroke: 2px #96C11E;
+    z-index: -1;
+}
+
+.page1 h2{
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.page1 p{
+    font-size: 20px;
+    font-weight: 400;
+    width: 40%;
+}
+
+.page2{
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+}
